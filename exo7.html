@@ -5,18 +5,59 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<style type="text/css">
+		body {
+	        text-align: center;
+		    margin-top: 150px;
+		}
+
+		form {
+		    display: flex;
+		    flex-direction: column;
+		    max-width: 500px;
+		    margin: 0px auto;
+		}
+
+		label {
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+
+		span {
+			width: 70px;
+		    display: inline-block;
+		    text-align: center;
+		}
+
+		.gd-align {
+		    flex: 1;
+		}
+
+		p {
+			text-align: right;
+			padding: 10px;
+		}
+
+		[for="querystring"] {
+		    display: flex;
+			flex-direction: column;
+		}
+	</style>
 </head>
 <body>
 	<!-- Exo 7 -->
 	<h2>Sport que tu aimes</h2>
 	<form action="" method="post">
-		<label for="login">
-			<input type="checkbox" name="querystring" value="judo">Judo
-			<input type="checkbox" name="querystring" value="tennis">Tennis
-			<input type="checkbox" name="querystring" value="piano">Piano
+		<label for="querystring">
+			<div><input type="checkbox" name="querystring" value="judo"><span>Judo</span></div>
+			<div><input type="checkbox" name="querystring" value="tennis"><span>Tennis</span></div>
+			<div><input type="checkbox" name="querystring" value="piano"><span>Piano</span></div>
 		</label>
 		<label for="submit">
-			<input type="submit" name="submit" value="Chercher" class="btn btn-success btn-lg">
+			<input type="submit" name="submit" value="Chercher" class="btn btn-success">
 		</label>
 	</form>
 	<!-- end exo-->
